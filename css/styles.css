@@ -170,3 +170,45 @@ h1, h2, h3 {
 	margin: 0 10px;
 	color: #000;
 }
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+/* For skill bar */
+
+.container {
+  width: 70%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+}
+
+.expert {background-color: #4CAF50; width: 100%; }
+.proficient {background-color: #2196F3; width: 90%; }
+.intermediate {background-color: #f44336; width: 80%; }
+.novice {background-color: #808080; width: 50%; }
+/*.dot-black {
+  height: 25px;
+  width: 25px;
+  background-color: #050505;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-grey {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}*/
+
