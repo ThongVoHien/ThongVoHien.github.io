@@ -1,0 +1,3 @@
+[submodule "jquery-circle-progress"]
+	path = jquery-circle-progress
+	url = https://github.com/kottenator/jquery-circle-progress.git
