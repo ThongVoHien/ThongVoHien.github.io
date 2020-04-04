@@ -55,7 +55,7 @@
 
 
 <body>
-  	<div class="container-fluid navbar-container m-sm-5">
+    <div class="container-fluid navbar-container m-sm-5">
       <!-- Header -->
       <nav class="navbar navbar-toggleable-sm navbar-light px-1 py-3 my-3 mb-sm-5">
   <a class="navbar-brand ml-2" href="/">Thong Vo's Blog</a>
@@ -95,8 +95,8 @@
 </nav>
 
 
-  		<div class="row">
-  			
+      <div class="row">
+        
 <div class="col-12 pt-lg-3 mb-4 px-4 portfolio-content">
   <!DOCTYPE html>
 <html lang="en">
@@ -140,7 +140,7 @@
 
   <!-- Google Analytics -->
 
-		<div class="row">
+    <div class="row">
 
       <div class="col-12 pt-lg-3 mb-4 px-4 portfolio-content">
         <img src="/images/profile.jpg" alt="profile" style="height:350px; margin:15px; margin-left: 80px; float: left">
@@ -155,7 +155,7 @@
         </div>
       </div>
 
-		</div>
+    </div>
     <hr>
     <div class="row">
       <div style="width:40%;float:left; margin-left: 90px">
@@ -163,44 +163,47 @@
         <h2>Programming Language</h2>
         <br>
 
-          <div class="circle" data-value="0.95" data-content='Python' data-gradient1='red' data-gradient2='orange'>
-            <strong></strong>
+          <div>
+            <div class="circle high" data-value="0.95" data-content='Python'>
+              <strong></strong>
+            </div>
+
+            <div class="circle high" data-value="0.95" data-content='PostgreSQL'>
+              <strong></strong>
+            </div>
+
+            <div class="circle high" data-value="0.9" data-content='C++'>
+              <strong></strong>
+            </div>
           </div>
 
-          <div class="circle" data-value="0.95" data-content='PostgreSQL' data-gradient1='red' data-gradient2='orange'>
-            <strong></strong>
+          <div>
+            <div class="circle good" data-value="0.8" data-content='JavaScript'>
+              <strong></strong>
+            </div>
+
+            <div class="circle good" data-value="0.7" data-content='HTML'>
+              <strong></strong>
+            </div>
+
+            <div class="circle good" data-value="0.7" data-content='ReactNative'>
+              <strong></strong>
+            </div>
           </div>
 
-          <div class="circle" data-value="0.95" data-content='PostgreSQL' data-gradient1='red' data-gradient2='orange'>
-            <strong></strong>
+          <div>
+            <div class="circle average" data-value="0.6" data-content='Java'>
+              <strong></strong>
+            </div>
+
+            <div class="circle average" data-value="0.5" data-content='OpenGL'>
+              <strong></strong>
+            </div>
+
+            <div class="circle average" data-value="0.5" data-content='CSS'>
+              <strong></strong>
+            </div>
           </div>
-
-
-          <div class="circle" data-value="0.9" data-content='C++' data-gradient1='#ffafbd' data-gradient2='ffc3a0'>
-            <strong></strong>
-          </div>
-
-          <div class="circle" data-value="0.8" data-content='JavaScript'>
-            <strong></strong>
-          </div>
-
-          <div class="circle" data-value="0.8" data-content='HTML'>
-            <strong></strong>
-          </div>
-
-          <div class="circle" data-value="0.6" data-content='Java'>
-            <strong></strong>
-          </div>
-
-          <div class="circle" data-value="0.6" data-content='OpenGL'>
-            <strong></strong>
-          </div>
-
-          <div class="circle" data-value="0.6" data-content='CSS'>
-            <strong></strong>
-          </div>
-
-
 
         <!-- Tools: Git, Django, concept etc -->
       </div>
@@ -272,13 +275,33 @@
   <script>
     $('.circle').circleProgress({
       value: $(this).data('value'),
-      fill: {
-        gradient: ['red', 'green']
-      }
     }).on('circle-animation-progress', function(event, progress) {
       $(this).find('strong').html('<font size="4">' + $(this).data('content') + '</font>');
     });
 
+    $('.circle.high').circleProgress({
+      fill: {
+        gradient: ['#662D8C', '#ED1E79']
+      }
+    });
+
+    $('.circle.good').circleProgress({
+      fill: {
+        gradient: ['#009245', '#FCEE21']
+      }
+    });
+
+    $('.circle.average').circleProgress({
+      fill: {
+        gradient: ['#B7F8DB', '#50A7C2']
+      }
+    });
+
+    $('.circle.begin').circleProgress({
+      fill: {
+        gradient: ['#2193b0', '#6dd5ed']
+      }
+    });
   </script>
 </body>
 </html>
